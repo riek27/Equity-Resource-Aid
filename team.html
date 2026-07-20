@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Our Team – ERA-SS</title>
+    <meta name="description" content="Meet the dedicated team behind ERA-SS – Equity Resource Aid South Sudan." />
+    <meta name="theme-color" content="#C62828" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* Extra inline styles for team page only */
+        .team-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+        .team-img-wrapper {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 16px;
+            border: 4px solid var(--era-primary);
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .team-img-wrapper .initials {
+            font-size: 3rem;
+            color: var(--era-primary);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .team-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+            color: #111;
+        }
+        .team-card .role {
+            color: var(--era-primary);
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+        .team-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar" id="topBar">
+        <div class="top-bar-inner">
+            <a href="mailto:contact@era-ss.org"><i class="fas fa-envelope"></i> contact@era-ss.org</a>
+            <span><i class="fas fa-phone"></i> +211 928 118 089</span>
+        </div>
+        <div class="top-bar-inner">
+            <a href="career.html"><i class="fas fa-briefcase"></i> Career</a>
+            <a href="report.html"><i class="fas fa-file-alt"></i> Reports</a>
+            <a href="team.html"><i class="fas fa-users"></i> Our Team</a>
+            <a href="support.html" class="donate-btn"><i class="fas fa-heart"></i> Donate</a>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/erass.jpeg" alt="ERA-SS Logo" onerror="this.outerHTML='<div class=\'logo-fallback\'>E</div>';" />
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">ERA</span>
+                    <span class="logo-sub">Empowering with Equality</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="about.html" class="nav-link">About ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html#history">Our Story</a>
+                        <a href="about.html#vision-mission">Vision & Mission</a>
+                        <a href="about.html#core-values">Core Values</a>
+                        <a href="about.html#genesis">Our Genesis</a>
+                        <a href="about.html#why-era-exists">Why ERA Exists</a>
+                        <a href="about.html#transparency">Transparency</a>
+                        <a href="about.html#sdgs">SDGs</a>
+                        <a href="team.html">Meet Our Team</a>
+                        <a href="report.html">Our Reports</a>
+                        <a href="partners.html">Partners &amp; Donors</a>
+                    </div>
+                </div>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="approach.html" class="nav-link">Approach</a>
+                <a href="coverage.html" class="nav-link">Coverage</a>
+                <a href="partners.html" class="nav-link">Partners</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="support.html" class="nav-link">Support</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="support.html" class="nav-donate"><i class="fas fa-heart" style="margin-right:6px;"></i>Donate</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-logo">
+            <img src="assets/erass.jpeg" alt="ERA-SS Logo" onerror="this.outerHTML='<div class=\'mobile-logo-fallback\'>E</div>';" />
+            <div class="mobile-logo-text-wrapper">
+                <span class="mobile-logo-text">ERA</span>
+                <span class="mobile-logo-sub">Empowering with Equality</span>
+            </div>
+        </div>
+        <a href="index.html">Home</a>
+        <button class="mobile-dropdown-btn" data-target="mobile-about-submenu">
+            <span>About</span>
+            <span class="dropdown-chevron">▾</span>
+        </button>
+        <div class="mobile-submenu" id="mobile-about-submenu">
+            <a href="about.html#history">Our Story</a>
+            <a href="about.html#vision-mission">Vision & Mission</a>
+            <a href="about.html#core-values">Core Values</a>
+            <a href="about.html#genesis">Our Genesis</a>
+            <a href="about.html#why-era-exists">Why ERA Exists</a>
+            <a href="about.html#transparency">Transparency</a>
+            <a href="about.html#sdgs">SDGs</a>
+            <a href="team.html">Meet Our Team</a>
+            <a href="report.html">Our Reports</a>
+            <a href="partners.html">Partners &amp; Donors</a>
+        </div>
+        <a href="programs.html">Programs</a>
+        <a href="approach.html">Approach</a>
+        <a href="coverage.html">Coverage</a>
+        <a href="partners.html">Partners</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a href="contact.html">Contact</a>
+        <a href="support.html" class="mobile-donate"><i class="fas fa-heart" style="margin-right:8px;"></i>Donate</a>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" style="background-image: url('assets/equity5.jpg'); height: 50vh; min-height: 350px; display: flex; align-items: center; justify-content: center; position: relative;">
+            <div class="slide-overlay" style="background: rgba(0,0,0,0.45);"></div>
+            <div class="container" style="position: relative; z-index: 3; text-align: center;">
+                <h1 style="color: #fff; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.6);">Our Team</h1>
+                <p style="color: #fff; font-size: 1.2rem; max-width: 700px; margin: 16px auto 0; text-shadow: 0 1px 6px rgba(0,0,0,0.6);">Meet the passionate people behind ERA-SS.</p>
+            </div>
+        </section>
+
+        <!-- ===== TEAM INTRO ===== -->
+        <section class="section bg-white">
+            <div class="container text-center">
+                <p class="section-subtitle"><i class="fas fa-users" style="margin-right:6px;"></i>Leadership &amp; Staff</p>
+                <h2 class="section-title">Driven by Purpose, United by Mission</h2>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">
+                    Our diverse team brings together expertise from humanitarian, development, and community‑based backgrounds. 
+                    Together, we are committed to serving the people of South Sudan with integrity and dedication.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== TEAM MEMBERS GRID ===== -->
+        <section id="team-members" class="section bg-light">
+            <div class="container">
+                <div class="grid-3" style="gap: 30px;">
+
+                    <!-- 1. Bakhita Aluel Deng – Executive Director -->
+                    <div class="card team-card" style="text-align: center; padding: 24px 20px;">
+                        <div class="team-img-wrapper">
+                            <span class="initials">BA</span>
+                        </div>
+                        <h3>Bakhita Aluel Deng</h3>
+                        <div class="role">Executive Director</div>
+                        <p>Bakhita leads the organization with a vision for inclusive development and a passion for community empowerment.</p>
+                    </div>
+
+                    <!-- 2. Liel Deng Liel – Program Manager -->
+                    <div class="card team-card" style="text-align: center; padding: 24px 20px;">
+                        <div class="team-img-wrapper">
+                            <span class="initials">LD</span>
+                        </div>
+                        <h3>Liel Deng Liel</h3>
+                        <div class="role">Program Manager</div>
+                        <p>Liel oversees program implementation, ensuring projects are responsive to community needs and delivered with quality.</p>
+                    </div>
+
+                    <!-- 3. Magar Thomas Dut – Head of Programs -->
+                    <div class="card team-card" style="text-align: center; padding: 24px 20px;">
+                        <div class="team-img-wrapper">
+                            <span class="initials">MT</span>
+                        </div>
+                        <h3>Magar Thomas Dut</h3>
+                        <div class="role">Head of Programs</div>
+                        <p>Magar coordinates all programmatic activities, ensuring alignment with ERA-SS's strategic goals and donor requirements.</p>
+                    </div>
+
+                    <!-- 4. Deng James Manot – FSL Manager -->
+                    <div class="card team-card" style="text-align: center; padding: 24px 20px;">
+                        <div class="team-img-wrapper">
+                            <span class="initials">DM</span>
+                        </div>
+                        <h3>Deng James Manot</h3>
+                        <div class="role">FSL Manager</div>
+                        <p>Deng leads food security and livelihoods interventions, supporting communities to build resilient agricultural systems.</p>
+                    </div>
+
+                    <!-- 5. James Yel Atiik – Communications & Information Officer -->
+                    <div class="card team-card" style="text-align: center; padding: 24px 20px;">
+                        <div class="team-img-wrapper">
+                            <span class="initials">JA</span>
+                        </div>
+                        <h3>James Yel Atiik</h3>
+                        <div class="role">Communications &amp; Information Officer</div>
+                        <p>James manages external communications, digital media, and information management to amplify ERA-SS's impact.</p>
+                    </div>
+
+                    <!-- 6. Amiir Achor Mayar – Board Member (Ordinary) -->
+                    <div class="card team-card" style="text-align: center; padding: 24px 20px;">
+                        <div class="team-img-wrapper">
+                            <span class="initials">AM</span>
+                        </div>
+                        <h3>Amiir Achor Mayar</h3>
+                        <div class="role">Board Member (Ordinary)</div>
+                        <p>Amiir brings strategic oversight and governance expertise to the ERA-SS board, guiding the organization's long-term direction.</p>
+                    </div>
+
+                    <!-- 7. Anyang Ayom Majok – Board Member (Ordinary) -->
+                    <div class="card team-card" style="text-align: center; padding: 24px 20px;">
+                        <div class="team-img-wrapper">
+                            <span class="initials">AM</span>
+                        </div>
+                        <h3>Anyang Ayom Majok</h3>
+                        <div class="role">Board Member (Ordinary)</div>
+                        <p>Anyang contributes to the board's oversight and policy development, ensuring accountability and good governance.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CALL TO ACTION ===== -->
+        <section class="cta-banner" style="background: var(--era-primary-dark);">
+            <div class="container text-center">
+                <h2 style="color: #fff;"><i class="fas fa-hands-helping" style="margin-right:12px;"></i>Join Our Team</h2>
+                <p style="max-width: 600px; margin: 0 auto; opacity: 0.9; color: #fff;">
+                    We're always looking for passionate individuals to help drive our mission forward.
+                </p>
+                <div style="margin-top: 24px;">
+                    <a href="career.html" class="btn btn-light" style="margin-right: 10px;"><i class="fas fa-briefcase" style="margin-right:8px;"></i>View Open Positions</a>
+                    <a href="contact.html" class="btn btn-outline-light"><i class="fas fa-envelope" style="margin-right:8px;"></i>Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/erass.jpeg" alt="ERA-SS Logo" class="footer-logo-img" onerror="this.outerHTML='<div style=\'width:44px;height:44px;background:var(--era-primary);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.3rem;\'>E</div>';" />
+                        <div class="footer-brand-wrapper">
+                            <span class="footer-brand-name">ERA</span>
+                            <span class="footer-brand-sub">Empowering with Equality</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Registered national NGO, Republic of South Sudan. Committed to equitable development, peace, and resilience.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/people/Equity-Resource-Aid-South-Sudan/61590477338666/" target="_blank" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/equityresourceaid?igsh=MTRuMzd4bTc2azZmZA==" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/equity-resource-aid-south-sudan-45a908414" target="_blank" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/211928118089" target="_blank" class="footer-social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Who We Are</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="approach.html">Our Approach</a></li>
+                        <li><a href="coverage.html">Coverage</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html#programs-grid">Education</a></li>
+                        <li><a href="programs.html#programs-grid">Livelihoods</a></li>
+                        <li><a href="programs.html#programs-grid">Peacebuilding</a></li>
+                        <li><a href="programs.html#programs-grid">Youth Empowerment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fas fa-location-dot" style="width:18px;color:var(--era-primary);"></i> Shirikat, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone" style="width:18px;color:var(--era-primary);"></i> +211 928 118 089</li>
+                        <li><i class="fas fa-phone" style="width:18px;color:var(--era-primary);"></i> +211 927 757 777</li>
+                        <li><i class="fas fa-envelope" style="width:18px;color:var(--era-primary);"></i> <a href="mailto:contact@era-ss.org">contact@era-ss.org</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Equity Resource Aid – South Sudan (ERA-SS). All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms</a> |
+                    <a href="#">Safeguarding</a> |
+                    <a href="#">Child Protection</a> |
+                    <a href="#">Code of Conduct</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- No additional JS needed for team page -->
+</body>
+</html>
