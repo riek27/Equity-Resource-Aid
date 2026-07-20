@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Support Our Mission – ERA-SS</title>
+    <meta name="description" content="Support ERA-SS through donations, partnerships, and volunteering. Every contribution helps build an equitable South Sudan." />
+    <meta name="theme-color" content="#C62828" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar" id="topBar">
+        <div class="top-bar-inner">
+            <a href="mailto:contact@era-ss.org"><i class="fas fa-envelope"></i> contact@era-ss.org</a>
+            <span><i class="fas fa-phone"></i> +211 928 118 089</span>
+        </div>
+        <div class="top-bar-inner">
+            <a href="career.html"><i class="fas fa-briefcase"></i> Career</a>
+            <a href="report.html"><i class="fas fa-file-alt"></i> Reports</a>
+            <a href="team.html"><i class="fas fa-users"></i> Our Team</a>
+            <a href="support.html" class="donate-btn"><i class="fas fa-heart"></i> Donate</a>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/erass.jpeg" alt="ERA-SS Logo" onerror="this.outerHTML='<div class=\'logo-fallback\'>E</div>';" />
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">ERA</span>
+                    <span class="logo-sub">Empowering with Equality</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a href="about.html" class="nav-link">About ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="about.html#history">Our Story</a>
+                        <a href="about.html#vision-mission">Vision & Mission</a>
+                        <a href="about.html#core-values">Core Values</a>
+                        <a href="about.html#genesis">Our Genesis</a>
+                        <a href="about.html#why-era-exists">Why ERA Exists</a>
+                        <a href="about.html#transparency">Transparency</a>
+                        <a href="about.html#sdgs">SDGs</a>
+                        <a href="team.html">Meet Our Team</a>
+                        <a href="report.html">Our Reports</a>
+                        <a href="partners.html">Partners &amp; Donors</a>
+                    </div>
+                </div>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="approach.html" class="nav-link">Approach</a>
+                <a href="coverage.html" class="nav-link">Coverage</a>
+                <a href="partners.html" class="nav-link">Partners</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="support.html" class="nav-link active">Support</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="support.html" class="nav-donate"><i class="fas fa-heart" style="margin-right:6px;"></i>Donate</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-logo">
+            <img src="assets/erass.jpeg" alt="ERA-SS Logo" onerror="this.outerHTML='<div class=\'mobile-logo-fallback\'>E</div>';" />
+            <div class="mobile-logo-text-wrapper">
+                <span class="mobile-logo-text">ERA</span>
+                <span class="mobile-logo-sub">Empowering with Equality</span>
+            </div>
+        </div>
+        <a href="index.html">Home</a>
+        <button class="mobile-dropdown-btn" data-target="mobile-about-submenu">
+            <span>About</span>
+            <span class="dropdown-chevron">▾</span>
+        </button>
+        <div class="mobile-submenu" id="mobile-about-submenu">
+            <a href="about.html#history">Our Story</a>
+            <a href="about.html#vision-mission">Vision & Mission</a>
+            <a href="about.html#core-values">Core Values</a>
+            <a href="about.html#genesis">Our Genesis</a>
+            <a href="about.html#why-era-exists">Why ERA Exists</a>
+            <a href="about.html#transparency">Transparency</a>
+            <a href="about.html#sdgs">SDGs</a>
+            <a href="team.html">Meet Our Team</a>
+            <a href="report.html">Our Reports</a>
+            <a href="partners.html">Partners &amp; Donors</a>
+        </div>
+        <a href="programs.html">Programs</a>
+        <a href="approach.html">Approach</a>
+        <a href="coverage.html">Coverage</a>
+        <a href="partners.html">Partners</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a href="contact.html">Contact</a>
+        <a href="support.html" class="mobile-donate"><i class="fas fa-heart" style="margin-right:8px;"></i>Donate</a>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" style="background-image: url('assets/equity.jpg'); height: 60vh; min-height: 450px; display: flex; align-items: center; justify-content: center; position: relative;">
+            <div class="slide-overlay" style="background: rgba(0,0,0,0.5);"></div>
+            <div class="container" style="position: relative; z-index: 3; text-align: center;">
+                <h1 style="color: #fff; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; text-shadow: 0 2px 12px rgba(0,0,0,0.6);">Support ERA-SS</h1>
+                <p style="color: #fff; font-size: 1.2rem; max-width: 700px; margin: 16px auto 0; text-shadow: 0 1px 6px rgba(0,0,0,0.6);">Every contribution, no matter the size, brings hope and opportunity to communities across South Sudan.</p>
+            </div>
+        </section>
+
+        <!-- ===== WHY SUPPORT ERA-SS ===== -->
+        <section id="why-support" class="section bg-white">
+            <div class="container text-center">
+                <p class="section-subtitle"><i class="fas fa-heart" style="margin-right:6px;"></i>Your Impact</p>
+                <h2 class="section-title">Why Your Support Matters</h2>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">
+                    Every contribution helps us work alongside communities to create lasting change across South Sudan. 
+                    Whether supporting education, peacebuilding, livelihoods, or emergency response, your generosity enables 
+                    vulnerable families to access opportunities, strengthen resilience, and build a brighter future.
+                </p>
+                <div class="grid-3" style="margin-top: 30px; gap: 20px;">
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Expand access to quality education
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Strengthen livelihoods and food security
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Promote peacebuilding and social cohesion
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Improve water, sanitation, and hygiene services
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Empower women and young people
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Build climate‑resilient communities
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WAYS TO GIVE ===== -->
+        <section id="ways-to-give" class="section bg-light">
+            <div class="container text-center">
+                <p class="section-subtitle"><i class="fas fa-gift" style="margin-right:6px;"></i>Ways to Give</p>
+                <h2 class="section-title">How You Can Help</h2>
+                <p style="max-width: 700px; margin: 0 auto 40px; color: var(--text-muted); font-size: 1.05rem;">
+                    Choose the option that works best for you. Your generosity fuels our programs across South Sudan.
+                </p>
+                <div class="grid-3" style="gap: 30px;">
+                    <!-- Donate Money -->
+                    <div class="card" style="padding: 32px 24px; text-align: center; border-top: 4px solid var(--era-primary);">
+                        <i class="fas fa-hand-holding-usd" style="color: var(--era-primary); font-size: 2.5rem; margin-bottom: 16px;"></i>
+                        <h3 style="margin-bottom: 12px;">Financial Donation</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 16px;">
+                            Make a one‑time or recurring donation via bank transfer or mobile money. Even a small amount can provide school supplies or clean water.
+                        </p>
+                        <a href="#donation-details" class="btn btn-primary"><i class="fas fa-arrow-down" style="margin-right:8px;"></i>See Options</a>
+                    </div>
+
+                    <!-- Partner With Us -->
+                    <div class="card" style="padding: 32px 24px; text-align: center; border-top: 4px solid var(--era-secondary);">
+                        <i class="fas fa-handshake" style="color: var(--era-secondary); font-size: 2.5rem; margin-bottom: 16px;"></i>
+                        <h3 style="margin-bottom: 12px;">Strategic Partnership</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 16px;">
+                            Join us as a corporate or institutional partner. We design custom collaborations that align with your values and maximize impact.
+                        </p>
+                        <a href="contact.html" class="btn btn-secondary"><i class="fas fa-envelope" style="margin-right:8px;"></i>Contact Us</a>
+                    </div>
+
+                    <!-- Volunteer / In-Kind -->
+                    <div class="card" style="padding: 32px 24px; text-align: center; border-top: 4px solid #555;">
+                        <i class="fas fa-box-open" style="color: #555; font-size: 2.5rem; margin-bottom: 16px;"></i>
+                        <h3 style="margin-bottom: 12px;">In-Kind &amp; Volunteering</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 16px;">
+                            Donate goods, services, or your professional skills. From school materials to IT expertise, everything counts.
+                        </p>
+                        <a href="contact.html" class="btn btn-ghost" style="border-color: #555; color: #555;"><i class="fas fa-user-plus" style="margin-right:8px;"></i>Get Involved</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DONATION DETAILS / BANK INFO ===== -->
+        <section id="donation-details" class="section bg-white">
+            <div class="container">
+                <div class="grid-2" style="align-items: center; gap: 40px;">
+                    <div>
+                        <p class="section-subtitle"><i class="fas fa-university" style="margin-right:6px;"></i>Bank &amp; Mobile Money</p>
+                        <h2 class="section-title">Make a Direct Deposit</h2>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px;">
+                            You can transfer your contribution directly to our official bank account or via mobile money. 
+                            Please include your name and “Donation” as the reference so we can acknowledge your gift.
+                        </p>
+                        <div class="card" style="background: #fff; border: 1px solid #eee; padding: 20px 24px;">
+                            <h4 style="margin-bottom: 14px; color: var(--era-primary);"><i class="fas fa-building-columns" style="margin-right:8px;"></i>Bank Transfer (South Sudan)</h4>
+                            <p style="color: var(--text-muted);">
+                                <strong>Bank Name:</strong> Kenya Commercial Bank (KCB) South Sudan<br>
+                                <strong>Account Name:</strong> Equity Resource Aid – South Sudan<br>
+                                <strong>Account Number:</strong> Official banking details provided upon request<br>
+                                <strong>Swift Code:</strong> KCBLSSJB
+                            </p>
+                        </div>
+                        <div class="card" style="background: #fff; border: 1px solid #eee; padding: 20px 24px; margin-top: 16px;">
+                            <h4 style="margin-bottom: 14px; color: var(--era-primary);"><i class="fas fa-mobile-alt" style="margin-right:8px;"></i>Mobile Money</h4>
+                            <ul style="list-style: none; padding: 0; color: var(--text-dark); line-height: 2;">
+                                <li><strong>MTN Mobile Money:</strong> +211 927 757 777 (Registered as ERA-SS)</li>
+                                <li><strong>Zain Cash:</strong> +211 928 118 089</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="assets/equity2.jpg" alt="Community members benefiting from ERA-SS programs" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); width: 100%;" loading="lazy" />
+                        <p style="margin-top: 14px; color: var(--text-muted); font-style: italic;">Your support transforms lives in South Sudan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DONATION IMPACT ===== -->
+        <section id="impact" class="section bg-light">
+            <div class="container text-center">
+                <p class="section-subtitle"><i class="fas fa-chart-line" style="margin-right:6px;"></i>Your Donation at Work</p>
+                <h2 class="section-title">What Your Gift Can Do</h2>
+                <div class="grid-4" style="margin-top: 40px; gap: 24px;">
+                    <div class="card" style="background: #fef5f5; border: 1px solid rgba(198,40,40,0.1);">
+                        <i class="fas fa-pencil-alt" style="font-size: 2rem; color: var(--era-primary); margin-bottom: 8px;"></i>
+                        <p style="color: var(--text-muted); margin-top: 8px;">Support learning materials for children</p>
+                    </div>
+                    <div class="card" style="background: #fef5f5; border: 1px solid rgba(198,40,40,0.1);">
+                        <i class="fas fa-seedling" style="font-size: 2rem; color: var(--era-primary); margin-bottom: 8px;"></i>
+                        <p style="color: var(--text-muted); margin-top: 8px;">Strengthen community livelihoods</p>
+                    </div>
+                    <div class="card" style="background: #fef5f5; border: 1px solid rgba(198,40,40,0.1);">
+                        <i class="fas fa-dove" style="font-size: 2rem; color: var(--era-primary); margin-bottom: 8px;"></i>
+                        <p style="color: var(--text-muted); margin-top: 8px;">Facilitate peacebuilding initiatives</p>
+                    </div>
+                    <div class="card" style="background: #fef5f5; border: 1px solid rgba(198,40,40,0.1);">
+                        <i class="fas fa-users" style="font-size: 2rem; color: var(--era-primary); margin-bottom: 8px;"></i>
+                        <p style="color: var(--text-muted); margin-top: 8px;">Expand youth empowerment programs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TRANSPARENCY & STEWARDSHIP ===== -->
+        <section id="transparency" class="section bg-white">
+            <div class="container text-center">
+                <p class="section-subtitle"><i class="fas fa-balance-scale" style="margin-right:6px;"></i>Trust</p>
+                <h2 class="section-title">Every Donation Makes an Impact</h2>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">
+                    ERA-SS is committed to responsible stewardship of every contribution we receive. We strive to ensure 
+                    that funds are used efficiently, ethically, and in line with our mission to serve communities across 
+                    South Sudan.
+                </p>
+                <div class="grid-2" style="margin-top: 30px; gap: 20px;">
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Responsible financial management
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Transparent reporting
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Regular monitoring of funded activities
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Ethical governance
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-check-circle" style="color: var(--era-primary); margin-right: 8px;"></i> Accountability to donors, partners, and communities
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OTHER WAYS TO SUPPORT ===== -->
+        <section id="other-ways" class="section bg-light">
+            <div class="container text-center">
+                <p class="section-subtitle"><i class="fas fa-hands-helping" style="margin-right:6px;"></i>Beyond Giving</p>
+                <h2 class="section-title">Get Involved Beyond Donating</h2>
+                <p style="max-width: 600px; margin: 0 auto 30px; color: var(--text-muted);">
+                    Not everyone can donate money — you can still make a difference.
+                </p>
+                <div class="grid-2" style="gap: 24px;">
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-user-plus" style="color: var(--era-primary); font-size: 1.5rem; margin-bottom: 8px;"></i>
+                        <h4>Become a Volunteer</h4>
+                        <p style="color: var(--text-muted);">Share your skills and time to strengthen our programs.</p>
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-handshake" style="color: var(--era-primary); font-size: 1.5rem; margin-bottom: 8px;"></i>
+                        <h4>Partner With Us</h4>
+                        <p style="color: var(--text-muted);">Collaborate as a business, NGO, donor, or institution.</p>
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-bullhorn" style="color: var(--era-primary); font-size: 1.5rem; margin-bottom: 8px;"></i>
+                        <h4>Fundraise</h4>
+                        <p style="color: var(--text-muted);">Organize fundraising campaigns within your school, workplace, or community.</p>
+                    </div>
+                    <div class="card" style="padding: 24px; text-align: left;">
+                        <i class="fas fa-share-alt" style="color: var(--era-primary); font-size: 1.5rem; margin-bottom: 8px;"></i>
+                        <h4>Advocate</h4>
+                        <p style="color: var(--text-muted);">Help raise awareness by sharing our mission and encouraging others to support equitable development in South Sudan.</p>
+                    </div>
+                </div>
+                <div style="margin-top: 30px;">
+                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-envelope" style="margin-right:8px;"></i>Get Involved</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CALL TO ACTION ===== -->
+        <section class="cta-banner" style="background: var(--era-primary);">
+            <div class="container text-center">
+                <h2 style="color: #fff;"><i class="fas fa-hands-helping" style="margin-right:12px;"></i>Ready to Make a Difference?</h2>
+                <p style="max-width: 600px; margin: 0 auto; opacity: 0.9; color: #fff;">
+                    Join the hundreds of supporters who power ERA‑SS every day. Together, we can break the cycle of poverty and build a brighter future for all South Sudanese.
+                </p>
+                <div style="margin-top: 24px;">
+                    <a href="#donation-details" class="btn btn-light" style="margin-right: 10px;"><i class="fas fa-arrow-down" style="margin-right:8px;"></i>Donate Now</a>
+                    <a href="contact.html" class="btn btn-outline-light"><i class="fas fa-envelope" style="margin-right:8px;"></i>Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/erass.jpeg" alt="ERA-SS Logo" class="footer-logo-img" onerror="this.outerHTML='<div style=\'width:44px;height:44px;background:var(--era-primary);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.3rem;\'>E</div>';" />
+                        <div class="footer-brand-wrapper">
+                            <span class="footer-brand-name">ERA</span>
+                            <span class="footer-brand-sub">Empowering with Equality</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Registered national NGO, Republic of South Sudan. Committed to equitable development, peace, and resilience.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/people/Equity-Resource-Aid-South-Sudan/61590477338666/" target="_blank" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/equityresourceaid?igsh=MTRuMzd4bTc2azZmZA==" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/equity-resource-aid-south-sudan-45a908414" target="_blank" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/211928118089" target="_blank" class="footer-social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Who We Are</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="approach.html">Our Approach</a></li>
+                        <li><a href="coverage.html">Coverage</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html#programs-grid">Education</a></li>
+                        <li><a href="programs.html#programs-grid">Livelihoods</a></li>
+                        <li><a href="programs.html#programs-grid">Peacebuilding</a></li>
+                        <li><a href="programs.html#programs-grid">Youth Empowerment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact-info">
+                        <li><i class="fas fa-location-dot" style="width:18px;color:var(--era-primary);"></i> Shirikat, Juba, South Sudan</li>
+                        <li><i class="fas fa-phone" style="width:18px;color:var(--era-primary);"></i> +211 928 118 089</li>
+                        <li><i class="fas fa-phone" style="width:18px;color:var(--era-primary);"></i> +211 927 757 777</li>
+                        <li><i class="fas fa-envelope" style="width:18px;color:var(--era-primary);"></i> <a href="mailto:contact@era-ss.org">contact@era-ss.org</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Equity Resource Aid – South Sudan (ERA-SS). All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms</a> |
+                    <a href="#">Safeguarding</a> |
+                    <a href="#">Child Protection</a> |
+                    <a href="#">Code of Conduct</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
