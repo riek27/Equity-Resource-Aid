@@ -1,6 +1,5 @@
 /* ============================================================
-   assets/css/style.css
-   Complete styles for ERA-SS multi-page website
+   style.css – Complete styles for ERA-SS multi-page website
    ============================================================ */
 
 /* ---------- CSS Variables ---------- */
@@ -160,7 +159,6 @@ a {
     top: 0;
   }
 }
-
 .navbar .container {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -748,6 +746,26 @@ a {
   color: var(--era-primary);
   border-color: #fff;
 }
+.btn-submit {
+  display: inline-block;
+  padding: 15px 36px;
+  background: var(--era-primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: var(--font-primary);
+  letter-spacing: 0.02em;
+  width: 100%;
+}
+.btn-submit:hover {
+  background: var(--era-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(198, 40, 40, 0.3);
+}
 @media (max-width: 768px) {
   .btn {
     padding: 13px 24px;
@@ -843,51 +861,51 @@ a {
   }
 }
 
-/* Timeline */
+/* ---------- TIMELINE (used in about.html) ---------- */
 .timeline {
-    position: relative;
-    padding-left: 40px;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
+  position: relative;
+  padding-left: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 15px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: var(--era-primary);
-    opacity: 0.3;
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--era-primary);
+  opacity: 0.3;
 }
 .timeline-item {
-    position: relative;
-    margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
 .timeline-badge {
-    position: absolute;
-    left: -40px;
-    top: 0;
-    width: 32px;
-    height: 32px;
-    background: var(--era-primary);
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9rem;
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background: var(--era-primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
 }
 .timeline-content {
-    background: #fff;
-    padding: 18px 24px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background: #fff;
+  padding: 18px 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 .timeline-content h3 {
-    color: var(--era-primary);
-    margin-bottom: 6px;
+  color: var(--era-primary);
+  margin-bottom: 6px;
 }
 
 /* ---------- CARDS ---------- */
@@ -1272,34 +1290,6 @@ a {
 .contact-form-card textarea {
   min-height: 120px;
 }
-.btn-submit {
-  display: inline-block;
-  padding: 15px 36px;
-  background: var(--era-primary);
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-family: var(--font-primary);
-  letter-spacing: 0.02em;
-  width: 100%;
-}
-.btn-submit:hover {
-  background: var(--era-primary-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(198, 40, 40, 0.3);
-}
-@media (max-width: 768px) {
-  .contact-form-card {
-    padding: 22px 16px;
-  }
-  .contact-info-card {
-    padding: 20px 16px;
-  }
-}
 
 /* ---------- SOCIAL ICONS ---------- */
 .social-icon-link {
@@ -1560,4 +1550,14 @@ a {
     font-size: 0.22rem;
     letter-spacing: 0.18em;
   }
+}
+
+/* ---------- ADDITIONAL UTILITY (e.g., for coverage page presence cards) ---------- */
+.presence-card {
+  border-top: 4px solid var(--era-primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.presence-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
